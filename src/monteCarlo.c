@@ -17,8 +17,8 @@ int main(void){
 
     for (i = 0; i < all; i++){
         //適当な点の生成
-        x = (double)rand() / 32767;
-        y = (double)rand() / 32767;
+        x = (double)rand() / RAND_MAX;
+        y = (double)rand() / RAND_MAX;
 
         //円の内部かどうか判定
         if (x * x + y * y <= 1.0){
