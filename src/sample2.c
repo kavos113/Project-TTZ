@@ -12,7 +12,7 @@ int main(int argc, char *argv){
     MPI_Comm_size(MPI_COMM_WORLD, &proc); //全プロセス数の取得
     MPI_Get_processor_name(name, &namelen); //名前の取得
 
-    printf(“Hello, World! From process %d of %d, %s\n”, rank, proc, name);
+    printf("Hello, World! From process %d of %d, %s\n", rank, proc, name);
     MPI_Finalize(); //MPIを終了
 
     return 0;
